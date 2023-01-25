@@ -15,4 +15,31 @@ for (let index = 0; index < numbers.length; index += 1) { // soma todos os núme
 
 let media = soma / numbers.length
 
-console.log (media)
+//console.log (media)
+
+if (media > 20) {
+   //console.log('valor maior que 20')
+} else {
+   //console.log ('Valor menor ou igual a 20')
+}
+
+let maiorNumero = numbers[0];
+
+for(index = 0; index < numbers.length; index += 1) {
+   if(numbers[index] > maiorNumero){
+      maiorNumero = numbers[index]
+      //console.log(maiorNumero)
+   }
+}
+
+let numeroImpar = numbers[0]
+
+for(index = 0; index < numbers.length; index += 1) {
+   if((numbers[index] % 2) !== 0) {
+  numeroImpar = numbers[index]
+  console.log(numeroImpar)
+} else {
+   console.log('nenhum valor impar encontrado')
+}
+}
+
