@@ -14,7 +14,7 @@ for (let numbers = 2; numbers <= 50; numbers += 1) {
         }
     }
    
-if (primo) {
+if (primo === true) {
     maiorNumPrimo = numbers;
 }
 
