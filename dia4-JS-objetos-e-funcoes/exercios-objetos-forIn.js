@@ -20,6 +20,9 @@ let info = {
     console.log(info[keys]);
  }
 //Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: ‘Tio Patinhas’, ‘Christmas on Bear Mountain, Dell’s Four Color Comics #178’, ‘O último MacPatinhas’, ‘Sim’. Então, imprima os valores de cada objeto juntos, de acordo com cada uma das chaves. 
+//Defina o for/in que deve percorrer cada propriedade do objeto info.
+for (let properties in info) {}
+//Utilize if/else para fazer uma condicional que deve testar, quando properties for recorrente, se os valores dos objetos são Sim. Caso sejam, imprima no terminal “Ambos recorrentes”. Caso a condicional seja falsa, imprima no terminal as informações dos objetos agrupadas por um e.
 
 let infoPersona = {
     personagem: 'Tio Patinhas',
