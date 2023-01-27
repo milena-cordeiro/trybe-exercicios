@@ -23,3 +23,21 @@ pessoa.idade = 19
  
   console.log('Nome:', pessoa.nome);
   console.log('Idade:', pessoa.idade);
+  // Modifique a variável para que não ocorra Erro
+
+  let favoriteFood = 'Lasanha';
+  favoriteFood = 'Hamburguer';
+  console.log(favoriteFood);
+
+  //Modifique as concatenações para template literals.
+
+  const name = 'Adriana';
+  const lastName = 'Soares';
+  console.log(`Olá, ${name} ${lastName}!`);
+  function soma(a,b) {
+    let resultado = a + b;
+    return resultado;
+  }
+  let a = 3;
+  let b = 5;
+  console.log(`O resultado da soma de ${a} e ${b} é: ${soma(a,b)}`);
