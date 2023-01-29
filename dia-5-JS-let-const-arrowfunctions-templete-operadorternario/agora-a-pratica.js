@@ -41,3 +41,36 @@ pessoa.idade = 19
   let a = 3;
   let b = 5;
   console.log(`O resultado da soma de ${a} e ${b} é: ${soma(a,b)}`);
+
+  //Modifique a estrutura das funções a seguir para que elas sejam arrow functions;
+
+//🚀 Transforme a função numeroAleatorio em uma arrow function;
+
+//function numeroAleatorio() {
+ //   return Math.random()
+ // }
+  //console.log(numeroAleatorio());
+
+  const numAleatorio = () => Math.random()
+console.log(numAleatorio());
+
+//🚀 Transforme a função hello em uma arrow function;
+function hello(nome) {
+    return `Olá, ${nome}!`
+  }
+  let nome = 'Ivan';
+  console.log(hello(nome));
+
+  const hello = (nome) => `Olá, ${nome}!`
+  console.log(hello('Ivan'));
+
+  //🚀 Transforme a função nomeCompleto em uma arrow function;
+  function nomeCompleto(nome, sobrenome) {
+    return `${nome} ${sobrenome}`
+  }
+  let name1 = 'Ivan';
+  let sobrenome = 'Pires';
+  console.log(nomeCompleto(nome, sobrenome));
+
+  const nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`
+  console.log(nomeCompleto('Ivan', 'Pires'));
