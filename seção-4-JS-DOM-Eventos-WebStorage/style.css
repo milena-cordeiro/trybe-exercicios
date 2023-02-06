@@ -1,0 +1,38 @@
+body {
+    background-color: burlywood;
+}
+
+div {
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    width: 500px;
+    display: inline-block;
+}
+
+.btn-fundo {
+  width: 50px;
+}
+.btn-cor-fonte {
+ width: 60px;
+}
+
+.btn-espaco {
+ width: 60px;
+}
+
+.btn-fonte {
+ width: 50px;
+}
+
+.btn-tipo-fonte {
+ width: 150px;
+}
+
+article  {
+    text-align: justify;
+}
+
+.titulo {
+    text-align: center;
+}
