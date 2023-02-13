@@ -29,6 +29,8 @@ body {
   flex-basis: 500px;
   /*  faça o container do menu crescer, quando houver espaço disponível.  */
   flex-grow: 1;
+  /* Utilize a propriedade align-self no elemento correto  */
+  align-self: center;
 }
 
 .menu-container ul {
