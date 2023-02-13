@@ -17,16 +17,18 @@ body {
 .logo-container {
   display: flex;
   justify-content: center;
-  /* Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px */
+  /* defina o tamanho Flexbox base para o container da imagem 268px */
   flex-basis: 268px;
-  /* Adicione uma propriedade Flexbox que modifique a ordem em que o logo e os itens do menu aparecem na tela. Após aplicar a propriedade */
+  /* modifique a ordem em que o logo e os itens do menu aparecem na tela. Após aplicar a propriedade */
   order: -1;
 }
 
 .menu-container {
   display: flex;
-  /* Adicione uma propriedade que defina o tamanho Flexbox base para o container do menu 500px */
+  /*defina o tamanho Flexbox base para o container do menu 500px */
   flex-basis: 500px;
+  /*  faça o container do menu crescer, quando houver espaço disponível.  */
+  flex-grow: 1;
 }
 
 .menu-container ul {
