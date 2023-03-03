@@ -60,18 +60,12 @@ const books = [
     releaseYear: 1928,
   },
 ];
-// Retorne o nome do livro com menor número de caracteres (menor nome).
-const expectedResult = 'Duna';
-const smallerName = () => {
-  let nameBook;
-  books.forEach((book) => {
-  if (!nameBook || book.name.length < nameBook.length) {
-    nameBook = book.name;
-  }
-  })
+//Faça uma função que retorne true, caso nenhuma pessoa autora tenha nascido no mesmo ano, e false, caso contrário.
+// aqui devesse usar 2 metodos, every para iterar sobre todos os itens e comparar cada um deles com os demais, e para fazer essa comparação usamos o some dentro da função chamada em every,
+// na função some fará a lógia de veriricas se NENHUMA pessoa nasceu no mesmo ano, por isso o !(NOT) no inicio de books.some, isso inverte a lógica do some, que busca algum elemento que satisfaza a condi
+const expectedResult = false;
 
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
+const authorUnique = () => {
+  return books.every((book) => !books.some((booksome) => (booksome.author.birthYear === book.author.birthYear) && (booksome.author.name !== book.author.name)));
 }
-
-console.log(smallerName());
+console.log(authorUnique());
