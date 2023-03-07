@@ -65,10 +65,12 @@ const countries = [
     area: 91
   }
 ];
+
+// console.log(countries[0].name.length);
 // 1 - Calcule a quantidade total da população de todos os países.
 const expectedResult1 = 120797034;
 const getPopulation = () => {
-  const totalPopulation = countries.reduce((acc, countrie) => acc + countrie.population, 0 );
+  const totalPopulation = countries.reduce((acc, country) => acc + country.population, 0 );
   return totalPopulation;
 };
 console.log(getPopulation());
@@ -76,7 +78,23 @@ console.log(getPopulation());
 // 2 - Calcule a área total de todos os países.
 const expectedResult2 = 4311757;
 const getTotalArea = () => {
-const totalAreaContries = countries.reduce((acc, currContrie) => acc + currContrie.area, 0);
+const totalAreaContries = countries.reduce((acc, currContry) => acc + currContry.area, 0);
 return totalAreaContries;
 };
 console.log(getTotalArea());
+// 3 - Encontre o país com o maior nome.
+
+const expectedResult = {
+  name: 'American Samoa',
+  region: 'Oceania',
+  currencies: [{ code: 'USD', name: 'United States Dollar' }],
+  capital: 'Pago Pago',
+  population: 55197,
+  area: 199
+}
+const longestName = () => {
+  const longestNameCountry = countries.reduce((accCountry, currCountry) => accCountry.name.length > currCountry.name.length ? accCountry : currCountry);
+  return longestNameCountry;
+}
+
+console.log(longestName());
